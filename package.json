@@ -2,7 +2,7 @@
   "name": "template",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://moistnacho.github.io/React_Youtube_Player/",
+  "homepage": "https://moistnacho.github.io/React_TubePlayer/",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.1",
     "@testing-library/jest-dom": "^5.11.4",

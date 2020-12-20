@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/React_TubePlayer/static/css/main.1a894aa6.chunk.css",
-    "main.js": "/React_TubePlayer/static/js/main.10733cd7.chunk.js",
-    "main.js.map": "/React_TubePlayer/static/js/main.10733cd7.chunk.js.map",
+    "main.css": "/React_TubePlayer/static/css/main.95a694e6.chunk.css",
+    "main.js": "/React_TubePlayer/static/js/main.90baf1b9.chunk.js",
+    "main.js.map": "/React_TubePlayer/static/js/main.90baf1b9.chunk.js.map",
     "runtime-main.js": "/React_TubePlayer/static/js/runtime-main.74a7cc44.js",
     "runtime-main.js.map": "/React_TubePlayer/static/js/runtime-main.74a7cc44.js.map",
-    "static/js/2.9d89584a.chunk.js": "/React_TubePlayer/static/js/2.9d89584a.chunk.js",
-    "static/js/2.9d89584a.chunk.js.map": "/React_TubePlayer/static/js/2.9d89584a.chunk.js.map",
+    "static/js/2.f5ba2ffa.chunk.js": "/React_TubePlayer/static/js/2.f5ba2ffa.chunk.js",
+    "static/js/2.f5ba2ffa.chunk.js.map": "/React_TubePlayer/static/js/2.f5ba2ffa.chunk.js.map",
     "index.html": "/React_TubePlayer/index.html",
-    "static/css/main.1a894aa6.chunk.css.map": "/React_TubePlayer/static/css/main.1a894aa6.chunk.css.map",
-    "static/js/2.9d89584a.chunk.js.LICENSE.txt": "/React_TubePlayer/static/js/2.9d89584a.chunk.js.LICENSE.txt"
+    "static/css/main.95a694e6.chunk.css.map": "/React_TubePlayer/static/css/main.95a694e6.chunk.css.map",
+    "static/js/2.f5ba2ffa.chunk.js.LICENSE.txt": "/React_TubePlayer/static/js/2.f5ba2ffa.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.74a7cc44.js",
-    "static/js/2.9d89584a.chunk.js",
-    "static/css/main.1a894aa6.chunk.css",
-    "static/js/main.10733cd7.chunk.js"
+    "static/js/2.f5ba2ffa.chunk.js",
+    "static/css/main.95a694e6.chunk.css",
+    "static/js/main.90baf1b9.chunk.js"
   ]
 }

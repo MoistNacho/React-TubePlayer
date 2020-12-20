@@ -1,0 +1,21 @@
+@import "../app.module.css";
+
+.section {
+  flex: 1 1 80%;
+  padding: 0 calc(var(--space-small) * 2);
+}
+
+.title {
+  padding: var(--space-small) 0;
+  border-bottom: var(--border-base);
+}
+
+.description {
+  font-size: calc(var(--font-small) * 1.3);
+}
+
+@media screen and (max-width: 768px) {
+  .section {
+    margin-bottom: var(--space-large);
+  }
+}

@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import Video from '../videoItem/Video';
+import styles from './VideoList.module.css';
 
 class videoList extends Component {
     render() {
         let {videos, isLoading} = this.props;
         return (
-            <ul className="videoList">
+            <ul className={styles.videoList}>
                 {
                     isLoading ?
                     videos.map((video)=>{

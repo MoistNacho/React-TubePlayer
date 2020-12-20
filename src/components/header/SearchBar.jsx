@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import styles from './SearchBar.module.css';
 
 class SearchBar extends Component {
     inputRef = React.createRef();
@@ -13,9 +14,9 @@ class SearchBar extends Component {
 
     render() {
         return (
-            <div className="searchBar">
-                    <input ref={this.inputRef} className="searchBar-input" type="text" placeholder="검색" onKeyPress={this.handleSearch} ></input>
-                    <button className="searchBar-btn" onClick={this.handleSearch}><i className="fas fa-search"></i></button>
+            <div className={styles.searchBar}>
+                    <input ref={this.inputRef} className={styles.input} type="text" placeholder="검색" onKeyPress={this.handleSearch} ></input>
+                    <button className={styles.btn}onClick={this.handleSearch}><i className="fas fa-search"></i></button>
             </div>  
         );
     }

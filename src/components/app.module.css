@@ -1,0 +1,79 @@
+@font-face {
+  font-family: "TmoneyRoundWindRegular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/TmoneyRoundWindRegular.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MaplestoryOTFBold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFBold.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  /* font Size */
+  --font-large: 24px;
+  --font-medium: 20px;
+  --font-small: 12px;
+  --font-button: 30px;
+
+  /* margin&padding size */
+  --space-large: 50px;
+  --space-small: 10px;
+
+  /* border */
+  --border-base: 1px solid rgb(104, 104, 104);
+  --border-header: 1px solid var(--header-light-color);
+
+  /* Item Min/Max Size */
+  --item-max-size: 300px;
+  --item-min-size: 225px;
+
+  --media-height: 360px;
+
+  /* color */
+  --font-color: rgb(240, 240, 240);
+  --background-color: #282828;
+  --header-color: #4d2c91;
+  --header-light-color: #b085f5;
+  --header-logo-color: #9c62ff;
+  --header-search-color: rgb(65, 34, 128);
+}
+
+* {
+  font-family: "TmoneyRoundWindRegular";
+  box-sizing: border-box;
+}
+
+body {
+  font-size: var(--font-large);
+  color: var(--font-color);
+  margin: 0;
+  box-sizing: border-box;
+  background-color: var(--background-color);
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+
+.section {
+  display: flex;
+  padding: var(--space-small);
+}
+
+@media screen and (max-width: 768px) {
+  .section {
+    flex-direction: column;
+  }
+}

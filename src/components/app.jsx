@@ -1,8 +1,8 @@
-import '../style/style.css';
 import React, { Component } from 'react';
 import Header from './header/Header';
 import VideoList from './videoList/VideoList';
 import WatchVideo from './watchVideo/WatchVideo';
+import styles from './app.module.css';
 
 class App extends Component { 
   state = {
@@ -49,7 +49,7 @@ class App extends Component {
     return (
       <>
         <Header onSearch={this.handleSearch} returnMain={this.defaultVideos} clear={this.clearVideoInfo} />
-        <section className="VT_section">
+        <section className={styles.section}>
           {
             videoInfo ? <WatchVideo videoInfo={videoInfo}/> : null
           }

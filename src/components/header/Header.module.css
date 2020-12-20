@@ -1,0 +1,46 @@
+@import "../app.module.css";
+
+.header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: calc(var(--space-small) * 2);
+  background-color: var(--header-color);
+}
+
+.btn {
+  display: none;
+  font-size: var(--font-large);
+  margin-right: calc(var(--space-small) * 2);
+  color: var(--header-light-color);
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 150ms ease-in;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+.logoName {
+  font-family: "MaplestoryOTFBold";
+  letter-spacing: calc(var(--space-small) / 5);
+}
+
+.logoIcon {
+  color: var(--header-logo-color);
+  padding-right: calc(var(--space-small) / 2);
+  font-size: var(--font-button);
+}
+
+@media screen and (max-width: 768px) {
+  .logoName {
+    display: none;
+  }
+}

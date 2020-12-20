@@ -1,0 +1,34 @@
+@import "../app.module.css";
+
+.searchBar {
+  width: 50%;
+  display: flex;
+}
+
+.input {
+  outline: none;
+  width: 80%;
+  font-size: var(--font-medium);
+  color: var(--font-color);
+  border: var(--border-header);
+  background-color: var(--header-search-color);
+}
+
+.input::placeholder {
+  color: var(--header-light-color);
+}
+
+.btn {
+  background-color: var(--header-search-color);
+  color: var(--header-light-color);
+  border: var(--border-header);
+  width: 10%;
+  min-width: calc(var(--item-min-size) / 6);
+  font-size: var(--font-medium);
+}
+
+@media screen and (max-width: 768px) {
+  .searchBar {
+    width: 80%;
+  }
+}

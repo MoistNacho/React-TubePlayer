@@ -2,10 +2,9 @@ import React, { Component } from 'react';
 import styles from './Video.module.css';
 
 class Video extends Component {
-    clickRef = React.createRef();
-    handleVideo = () =>{
-     this.props.VideoInfo(this.clickRef.current.id, this.props.video);
-     document.body.scrollIntoView({block: "start"});
+    handleVideo = (event) =>{
+        this.props.catchVideo(event.currentTarget.id, this.props.video);
+        document.body.scrollIntoView({block: "start"});
     };
 
     videoDate = (date) =>{
@@ -18,7 +17,7 @@ class Video extends Component {
     render() {
         const { video } = this.props;
         return (
-            <li ref={this.clickRef} className={styles.video} onClick={this.handleVideo} id={video.id.videoId ? video.id.videoId : video.id}>
+            <li className={styles.video} onClick={this.handleVideo} id={video.id.videoId ? video.id.videoId : video.id}>
                 <div className={styles.item}>
                     <div className={styles.img}>
                         <img src={video.snippet.thumbnails.high.url} alt=""/>

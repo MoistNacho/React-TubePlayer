@@ -4,14 +4,14 @@ import styles from './VideoList.module.css';
 
 class videoList extends Component {
     render() {
-        let {videos, isLoading} = this.props;
+        let {videos, isLoading, catchVideo} = this.props;
         return (
             <ul className={styles.list}>
                 <div className={styles.videos}>
                     {
                         isLoading ?
                         videos.map((video)=>{
-                            return <Video key={video.etag} video={video} VideoInfo={this.props.VideoInfo} />
+                            return <Video key={video.etag} video={video} catchVideo={catchVideo} />
                         })
                         :
                         `Loading...`

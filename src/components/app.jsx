@@ -33,7 +33,6 @@ class App extends Component {
       title : info.snippet.title,
       description : info.snippet.description
     }});
-    console.log(id);
   }
 
   clearVideoInfo = () => {
@@ -53,7 +52,7 @@ class App extends Component {
           {
             videoInfo ? <WatchVideo videoInfo={videoInfo}/> : null
           }
-          <VideoList videos={videos} isLoading={isLoading} VideoInfo={this.catchVideoInfo} />
+          <VideoList videos={videos} isLoading={isLoading} catchVideo={this.catchVideoInfo} />
         </section>
       </>
     );
